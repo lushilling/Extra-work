@@ -1,0 +1,17 @@
+package com.qa;
+
+
+import com.qa.domain.Account;
+import com.qa.repository.AccountRepositoryDB;
+
+public class App {
+
+	Account a = new Account();
+	a.setName("Danny");
+
+	public static void main(String[] args) {
+		AccountRepositoryDB db = new AccountRepositoryDB();
+		
+		
+	}
+}

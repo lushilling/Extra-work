@@ -1,0 +1,9 @@
+package com.qa.repository;
+
+import com.qa.domain.Account;
+
+public class AccountRepository {
+
+	public Account read(int id);
+	public Account update(int id, Account account);
+}

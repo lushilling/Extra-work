@@ -1,0 +1,40 @@
+package com.qa.domain;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+@Entity
+public class Task {
+	
+	@Id
+	@GeneratedValue
+	private int id;
+	private String todo;
+	
+	@OneToMany
+	private Set<Task> tasklist = new HashSet<Task>();
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getTodo() {
+		return todo;
+	}
+	public void setTodo(String todo) {
+		this.todo = todo;
+	}
+	
+	public Set<Task> getTasklist() {
+		return tasklist;
+	}
+	
+	
+}

@@ -1,0 +1,17 @@
+package com.qa.repository;
+
+import javax.persistence.EntityManager;
+
+import com.qa.domain.Account;
+
+public class AccountRepositoryDB {
+
+	EntityManager manager;
+	
+	public Account create(Account account) {
+		manager.persist(account);
+		return account;
+
+	
+	}
+}

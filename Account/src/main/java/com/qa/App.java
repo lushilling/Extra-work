@@ -1,0 +1,24 @@
+package com.qa;
+
+import com.qa.domain.Account;
+import com.qa.domain.Task;
+import com.qa.repository.AccountRepositoryDB;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Account a = new Account();
+		a.setName("Danny");
+
+		Task t = new Task();
+		t.setTodo("Work");
+		a.getTasklist().add(t);
+
+		AccountRepositoryDB db = new AccountRepositoryDB();
+		db.create(a);
+		
+		db.update(17);
+
+	}
+}

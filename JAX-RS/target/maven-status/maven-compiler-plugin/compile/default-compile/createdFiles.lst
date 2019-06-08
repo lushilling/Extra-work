@@ -1,0 +1,6 @@
+com\qa\domain\Account.class
+com\qa\repository\AccountRepository.class
+com\qa\domain\Task.class
+com\qa\rest\AccountEndPoints.class
+com\qa\repository\AccountRepositoryDB.class
+com\qa\rest\MyApplication.class

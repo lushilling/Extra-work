@@ -1,0 +1,35 @@
+package com.qa.rest;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.PUT;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import com.qa.domain.Account;
+
+@Path("/")
+public class AccountEndPoints {
+
+	@GET
+	@Path("/account")
+	@Produces(MediaType.TEXT_PLAIN) // will be returning text
+	public Response getAccount() {
+		String hello = "Hello World";
+		return Response.ok(hello).build();
+
+	}
+
+	@PUT
+	@Path("/account/{id}")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response updateAccount(Account account, @PathParam("id") int id ) {
+		
+		return Response.ok().build();
+	}
+
+}

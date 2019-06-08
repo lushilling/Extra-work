@@ -1,0 +1,10 @@
+package com.qa.containers;
+
+import javax.enterprise.inject.Alternative;
+
+public class Friend implements Relation {
+
+	public String message() {
+		return "Hello my friend";
+	}
+}

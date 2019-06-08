@@ -1,0 +1,12 @@
+package com.qa;
+
+import com.qa.repository.AccountRepositoryDB;
+
+public class App {
+
+	public static void main(String[] args) {
+		AccountRepositoryDB db = new AccountRepositoryDB();
+		db.create(account);
+		
+	}
+}

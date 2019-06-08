@@ -1,0 +1,9 @@
+package com.qa.repository;
+
+public class AccountRepositoryDB {
+
+	public Account create(Account account)}
+
+	{
+	}
+}
